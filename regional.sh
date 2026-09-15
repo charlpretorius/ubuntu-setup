@@ -12,9 +12,4 @@ sudo update-locale --reset \
   LANG=en_ZA.UTF-8 \
   LANGUAGE=en_ZA:en_GB:en
 
-# Tell the GNOME login screen to use it for this user too
-sudo busctl call org.freedesktop.Accounts \
-  /org/freedesktop/Accounts/User$(id -u) \
-  org.freedesktop.Accounts.User SetLanguage s en_ZA.UTF-8
-
 echo "Done. Log out and back in for the changes to take effect."
